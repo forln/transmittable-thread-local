@@ -161,7 +161,7 @@ public final class TtlRunnable implements Runnable {
      * @param idempotent                       is idempotent mode or not. if {@code true}, just return input {@link Runnable} when it's {@link TtlRunnable},
      *                                         otherwise throw {@link IllegalStateException}.
      *                                         <B><I>Caution</I></B>: {@code true} will cover up bugs! <b>DO NOT</b> set, only when you know why.
-     * @return wrapped tasks
+     * @return wrapped tasks1
      * @throws IllegalStateException when input is {@link TtlRunnable} already and not idempotent.
      */
     public static List<TtlRunnable> gets(Collection<? extends Runnable> tasks, boolean releaseTtlValueReferenceAfterRun, boolean idempotent) {
